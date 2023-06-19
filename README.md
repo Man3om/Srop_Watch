@@ -1,5 +1,5 @@
 # Stop_Watch
-Implement Stop Watch Timer Using At-Mega32
+Implement Stop Watch Timer Using ATmega32
 
 ## Specifications:
 1- ATmega32 Microcontroller with frequency 1Mhz.
