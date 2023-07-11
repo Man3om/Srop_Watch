@@ -1790,15 +1790,15 @@ ISR(TIMER1_COMPA_vect) // Interrupt occurs every 1 Second
 	}
 
 	/* For Hours */
-	if((Hours == 99) && (Minutes == 60) && (Seconds == 60))
+	if((Hours == 99) && (Minutes == 59) && (Seconds == 59))
      d48:	80 91 6a 00 	lds	r24, 0x006A
      d4c:	83 36       	cpi	r24, 0x63	; 99
      d4e:	71 f4       	brne	.+28     	; 0xd6c <__vector_7+0x6e>
      d50:	80 91 69 00 	lds	r24, 0x0069
-     d54:	8c 33       	cpi	r24, 0x3C	; 60
+     d54:	8b 33       	cpi	r24, 0x3B	; 59
      d56:	51 f4       	brne	.+20     	; 0xd6c <__vector_7+0x6e>
      d58:	80 91 68 00 	lds	r24, 0x0068
-     d5c:	8c 33       	cpi	r24, 0x3C	; 60
+     d5c:	8b 33       	cpi	r24, 0x3B	; 59
      d5e:	31 f4       	brne	.+12     	; 0xd6c <__vector_7+0x6e>
 	{
 		Seconds = 0 ;

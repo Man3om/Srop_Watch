@@ -81,7 +81,7 @@ ISR(TIMER1_COMPA_vect) // Interrupt occurs every 1 Second
 	}
 
 	/* For Hours */
-	if((Hours == 99) && (Minutes == 60) && (Seconds == 60))
+	if((Hours == 99) && (Minutes == 59) && (Seconds == 59))
 	{
 		Seconds = 0 ;
 		Minutes = 0 ;
